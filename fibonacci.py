@@ -4,16 +4,16 @@ def fibb(x):
     fibval = []
     for i in range (x):
 
-        if i >= x: break
-
         fib = fib0+fib1
         fib0 = fib1
         fib1 = fib
         fibval.append(fib)
+
+        if fib >= x: break
 
     return fibval
 
 def showfibb(x):
     print(fibb(x))
 
-showfibb(7)
+showfibb(5)
