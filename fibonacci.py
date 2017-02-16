@@ -7,13 +7,12 @@ def fibb(x):
         fib = fib0+fib1
         fib0 = fib1
         fib1 = fib
+        if fib > x: break
         fibval.append(fib)
-
-        if fib >= x: break
 
     return fibval
 
 def showfibb(x):
     print(fibb(x))
 
-showfibb(5)
+showfibb(199)
