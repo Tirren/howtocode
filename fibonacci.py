@@ -2,7 +2,7 @@ def fibb(x):
     fib0 = 0
     fib1 = 1
     fibval = []
-    for i in range (x):
+    while True:
 
         fib = fib0 + fib1
         fib0 = fib1
@@ -15,4 +15,4 @@ def fibb(x):
 def showfibb(x):
     print(fibb(x))
 
-showfibb(199)
+showfibb(50)
