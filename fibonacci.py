@@ -4,7 +4,7 @@ def fibb(x):
     fibval = []
     for i in range (x):
 
-        fib = fib0+fib1
+        fib = fib0 + fib1
         fib0 = fib1
         fib1 = fib
         if fib > x: break
