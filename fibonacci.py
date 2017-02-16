@@ -1,13 +1,17 @@
-fib0 = 0
-fib1 = 1
+def fibb(x):
+    fib0 = 0
+    fib1 = 1
+    fibval = []
+    for i in range (x):
 
-print(fib1, end=' ')
-for i in range (200):
+        fib = fib0+fib1
+        fib0 = fib1
+        fib1 = fib
+        fibval.append(fib)
 
-    fib = fib0 + fib1
-    fib0 = fib1
-    fib1 = fib
-    print(fib, end=' ')
+    return(fibval)
 
-    if i == 5:
-        break
+def showfibb(x):
+    print(fibb(x))
+
+showfibb(7)
