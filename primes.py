@@ -1,5 +1,7 @@
 i = 2
-while i < 200:
+n = 200
+
+while True:
     f = True
     j = 2
     while j < i:
@@ -7,3 +9,7 @@ while i < 200:
         j += 1
     if f: print(i, end=' ')
     i += 1
+
+    if i==n:
+     break
+
