@@ -9,7 +9,7 @@ def fibb(x):
         fib1 = fib
         fibval.append(fib)
 
-    return(fibval)
+    return fibval
 
 def showfibb(x):
     print(fibb(x))
