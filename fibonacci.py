@@ -13,5 +13,5 @@ def fibb(x):
     return tuple(fibval)
 
 def showfibb(x, y):
-    print(y.join([str(i) for i in fibb(x)]))
+    print(y.join(str(x) for x in fibb(x)))
 showfibb(50, ' | ')
