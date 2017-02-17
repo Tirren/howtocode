@@ -10,9 +10,8 @@ def fibb(x):
         if fib > x: break
         fibval.append(fib)
 
-    return fibval
+    return tuple(fibval)
 
-def showfibb(x):
-    print(fibb(x))
-
-showfibb(50)
+def showfibb(x, y):
+    print(y.join([str(i) for i in fibb(x)]))
+showfibb(50, ' | ')
