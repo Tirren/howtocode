@@ -1,9 +1,15 @@
-Name = input('Enter the username ')
-Count = len(str(Name))
-if Count % 2 == 0:
-    number = 'even'
-    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an ' + number + ' number.', sep='\n')
-else:
-    number = 'uneven'
-    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an ' + number + ' number.', sep='\n')
+def Name(x):
+    return input('Enter the name ')
 
+def Count(y):
+    return len(str(Name(1)))
+
+def OddEven(z):
+    if Count(2) % 2 == 0:
+        return 'Number is even'
+    else: return 'Number is odd'
+
+def PrintRes(i):
+    print(OddEven(1))
+
+PrintRes(1)
