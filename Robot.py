@@ -1,7 +1,9 @@
 Name = input('Enter the username ')
 Count = len(str(Name))
 if Count % 2 == 0:
-    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an even number.', sep='\n')
+    number = 'even'
+    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an ' + number + ' number.', sep='\n')
 else:
-    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an uneven number.', sep='\n')
+    number = 'uneven'
+    print('Hi ' + Name + '!', 'You have ' + str(Count) + ' characters in your name.', 'It is an ' + number + ' number.', sep='\n')
 
