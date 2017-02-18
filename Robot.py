@@ -1,18 +1,14 @@
-def Name(x):
+def Name():
     x = input('Enter the name ')
-    return x
+    y = str(x)
+    def Count(y):
+        return len(y)
+    def OddEven():
+            if Count(y) % 2 == 0:
+                return 'It is an even number'
+            else:
+                return 'It is an odd number'
+    return print('Hello ' + y + '!', 'You have ' + str(Count(y)) + ' characters in your name.', OddEven(), sep='\n')
 
-N = Name(True)
+Name()
 
-def Count(y):
-    return len(str(N))
-
-def OddEven(z):
-    if Count(True) % 2 == 0:
-        return 'It is an even number'
-    else: return 'It is an odd number'
-
-def PrintRes(i):
-    print('Hello ' + N + '!', 'You have ' + str(Count(True)) + ' characters in your name.', OddEven(True), sep='\n')
-
-PrintRes(True)
