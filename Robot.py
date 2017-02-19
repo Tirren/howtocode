@@ -1,14 +1,17 @@
-def Name():
-    x = input('Enter the name ')
-    y = str(x)
-    def Count(y):
-        return len(y)
-    def OddEven():
-            if Count(y) % 2 == 0:
-                return 'It is an even number'
-            else:
-                return 'It is an odd number'
-    return print('Hello ' + y + '!', 'You have ' + str(Count(y)) + ' characters in your name.', OddEven(), sep='\n')
+Name = lambda: input('Enter the name ')
 
-Name()
+Count = lambda x: len(str(x))
 
+def OddEven(y):
+    if Count(y) % 2 == 0:
+        return 'It is an even number'
+    else:
+        return 'It is an odd number'
+
+def PrintNames():
+    a = Name()
+    b = Count(a)
+    c = OddEven(b)
+    return print('Hello ' + a + '!', 'You have ' + str(b) + ' characters in your name.', c, sep='\n')
+
+PrintNames()
