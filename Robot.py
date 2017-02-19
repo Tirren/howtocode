@@ -1,6 +1,8 @@
-Name = lambda: input('Enter the name ')
+def Name():
+    return input('Enter the name ')
 
-Count = lambda x: len(str(x))
+def Count(x):
+    return len(str(x))
 
 def OddEven(y):
     if Count(y) % 2 == 0:
