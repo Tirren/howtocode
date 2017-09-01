@@ -13,3 +13,5 @@ while True:
     if i==n:
      break
 
+primes = {j for i in range(2, 10) for j in range(2*i, 100, i)}
+no_primes = [x for x in range(2, 100) if x not in primes]
